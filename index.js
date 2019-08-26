@@ -1,4 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
+#!/usr/bin/env node
+
 const depcheck = require("depcheck");
 const glob = require("glob");
 const DotJson = require("dot-json");
