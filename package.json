@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Move your monolith dependencies into lerna packages",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
