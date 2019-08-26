@@ -1,0 +1,29 @@
+{
+  "name": "lerna-dependencies-generator",
+  "version": "1.0.0",
+  "description": "Move your monolith dependencies into lerna packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xolvio/lerna-dependencies-generator.git"
+  },
+  "keywords": [
+    "lerna",
+    "monolith",
+    "packages"
+  ],
+  "author": "Lukasz Gandecki <lukasz@xolv.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xolvio/lerna-dependencies-generator/issues"
+  },
+  "homepage": "https://github.com/xolvio/lerna-dependencies-generator#readme",
+  "dependencies": {
+    "depcheck": "^0.8.3",
+    "dot-json": "^1.1.0",
+    "glob": "^7.1.4"
+  }
+}
