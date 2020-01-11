@@ -1,6 +1,6 @@
 {
   "name": "lerna-dependencies-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Move your monolith dependencies into lerna packages",
   "main": "index.js",
   "bin": "index.js",

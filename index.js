@@ -9,8 +9,16 @@ const options = {};
 const currentPackage = require(`${process.cwd()}/package.json`);
 const lernaConfig = require(`${process.cwd()}/lerna.json`);
 
-const { dependencies, devDependencies } = currentPackage;
+let { dependencies, devDependencies } = currentPackage;
 //TODO parse all the packages blobs from lerna
+
+if (!dependencies) {
+  dependencies = {};
+}
+
+if (!devDependencies) {
+  devDependencies = {};
+}
 
 glob(
   `${process.cwd()}/${lernaConfig.packages[0]}/package.json`,
@@ -39,8 +47,8 @@ glob(
             return builtObject;
           },
           {
-            dependencies: packageJson.get("dependencies"),
-            devDependencies: packageJson.get("devDependencies")
+            dependencies: packageJson.get("dependencies") || {},
+            devDependencies: packageJson.get("devDependencies") || {}
           }
         );
 
